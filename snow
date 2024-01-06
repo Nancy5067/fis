@@ -1,0 +1,6 @@
+Step 1: Create a text file snow.exe in your folder
+Step 2 :Open command prompt from the snow folder.
+Step 3: Run the command 
+- snow.exe -C -p 1234 -m "KC College is organizing hacking competition" prac7.txt hidden.txt. 
+Step 4: Run the command 
+snow.exe -C -p 1234 hidden.txt.
