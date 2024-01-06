@@ -1,0 +1,2 @@
+ifconfig
+netdiscover -r ip address
