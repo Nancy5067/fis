@@ -1,0 +1,6 @@
+git clone https://github.com/GiJ03/Infoga
+
+cd Infoga
+python setup.py install
+
+python infoga.py --domain hsnc.edu.in -- source google --verbose 3
