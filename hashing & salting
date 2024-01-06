@@ -3,7 +3,6 @@ def gen_hash(password):#create function
     pass_word=password.encode('utf-8')#unicode transformation format 8 bit
     #sha secure hash algorithm 256 bit key
     hash_pass=hashlib.sha256(pass_word).hexdigest()#creates hash object type
-    #return has value in hexa decimal format - hexdigest for readability
     return hash_pass
 
 password="Khansa"
@@ -13,6 +12,7 @@ print("Hashed Password for your password is ", hash_pass)
 password2="Khansa"
 hash_pass2=gen_hash(password)
 print(" \n Hashed Password for your password is ", hash_pass2)
+
 
 #Salting
 
