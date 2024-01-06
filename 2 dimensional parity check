@@ -1,0 +1,27 @@
+def add_par(data):
+    for row in data:
+        row.append(row.count(1)%2)
+    column_parity=[sum(column)%2 for column in zip(*data)]
+    data.append(column_parity)
+    return data
+def chk_par(data):
+    row_parity =[row[-1] for row in data [:-1]]
+    calculated_row_par=[row.count(1)%2 for row in data[:-1]]
+    column_parity =[data[-1]]
+    calculated_column_par=[sum(column)%2 for column in zip(*data[:-1])]
+    row_errors=[i for i,(actual,calculated)in enumerate(zip(row_parity,calculated_row_par)) if actual != calculated]
+    column_errors=[i for i,(actual,calculated)in enumerate(zip(column_parity,calculated_column_par)) if actual != calculated]
+    return row_errors,column_errors
+data=[[1,0,1,0,1],[0,1,0,1,0]]
+data_par=add_par(data)
+print("Data with Parity Bits;")
+for row in data_par:
+    print(row)
+data_par[1][1]=0
+row_errors,column_errors=chk_par(data_par)
+
+print("\n Detected Error ")
+print("\n Row_Errors", row_errors)
+print("\n Column Errors:",column_errors)
+
+
