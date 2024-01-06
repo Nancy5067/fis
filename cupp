@@ -1,0 +1,22 @@
+Step 1: Check whether Python Environment is Established or not, use the following command
+- python
+
+Step 2: Create a new directory called CUPP using the following command. In this directory, we will mkdir complete the installation of the CUPP tool
+- mkdir CUPP
+Step 3: Switch to the CUPP directory using the following comman
+- cd CUPP
+Step 4: To install the tool, clone the tool from Github
+git clone https://github.com/Mebus/cupp.git
+- ls
+Step 5: A new directory created of the CUPP tool that has been generated while we were installing the tool. 
+Now move to that directory using the below command also see the content of the directory again using ls 
+command
+- ls
+- cd cupp
+
+working with cupp tool
+Step 1: In order to create Wordlists from basic information known about the victim. We are using (-i) i the 
+tag for Interactive questions for password wordlist creation.
+ - python3 cupp.py -i
+- ls
+- cat khansa.txt
