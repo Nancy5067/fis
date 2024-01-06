@@ -1,4 +1,4 @@
-import hashlib #provide various hash functions
+import hashlib 
 def gen_hash(password):#create function
     pass_word=password.encode('utf-8')#unicode transformation format 8 bit
     #sha secure hash algorithm 256 bit key
@@ -13,3 +13,21 @@ print("Hashed Password for your password is ", hash_pass)
 password2="Khansa"
 hash_pass2=gen_hash(password)
 print(" \n Hashed Password for your password is ", hash_pass2)
+
+#Salting
+
+import hashlib 
+import os
+def gen_salt():
+    return os.urandom(16)
+def gen_hash(password,salt):
+    pass_word_salt=password.encode('utf-8')+salt
+    hash_pass=hashlib.sha256(pass_word_salt).hexdigest()
+    return hash_pass, salt
+
+password="Khansa"
+salt=gen_salt()
+hash_pass,salt=gen_hash(password,salt)
+print("Salt value is ", salt)
+print("Hashed Password for your password is ", hash_pass)
+
