@@ -1,0 +1,12 @@
+Step 1: Create a text file which a message you want to hide and save it in stools4.exe in your folder.
+Step 2: Open the Stools application from the s-tools4 folder
+Step 3: Drag and drop a bmp file from s-tools4 folder.
+Step 4: Drag and drop the text file which had the hidden message in the s-tools application
+Step 5: It will ask for a passphrase enter the passphrase as kccollege and select the DES encryption 
+algorithm.
+Step 6: After we click on okay a new image will be generated. Save that image as hiddenresult.bmp and 
+make sure that it has a .bmp extension.
+Step 7: Now Drag the hiddenresult.bmp file in s-tools application. Right click on it and select reveal.
+Step 8: Enter the passphrase we had create that was kccollege and select the encryption algorithm as DES.
+Step 9: A text file will be generated. Right Click on that text file and save it as hiddenresult.txt
+Step 10: Open this hiddenmessageresult.txt file. It will show the message we had hidden in the image
