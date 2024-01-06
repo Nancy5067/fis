@@ -1,0 +1,7 @@
+ ifconfig
+
+cd /home
+mkdir kc
+cd kc
+touch abc.txt
+ls
