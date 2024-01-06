@@ -16,3 +16,6 @@ void main()
  if (test_pw()) printf("Fall!\n");
  else printf("You win!\n"); 
 }
+
+Step 3: gcc -g -static --no-pie -o buf buffer.c
+Step 4: ./buf
