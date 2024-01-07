@@ -1,0 +1,14 @@
+- nano string.c
+- 
+#include <stdio.h>
+void main(int argc, char **argv) //argc - argument count, argv - argument vector
+{
+  printf(argv[1]);
+
+}
+
+- gcc -o test string.c
+- ./test "Hello KC College"
+- ./test "%s %s %s"
+- ./test "%s %f %c"
+
